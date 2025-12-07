@@ -1,10 +1,14 @@
 import React from 'react'
+import OverlayBorder from './OverlayBorder';
 
 const Hero = () => {
   return (
-    <div className='mt-24 mx-48 flex flex-col items-start justify-center text-left gap-6 px-4'>
-      <h1 className='font-semibold text-7xl w-160 bg-linear-120 from-[#2600ff] to-[#ff0062] text-transparent bg-clip-text'>Hey. I'm Chris, another developer.</h1>
-      <h3 className='font-semibold text-3xl w-100'>One who's passionate about building stuff.</h3>
+    <div className='px-56 py-28 flex flex-col justify-center'>
+      <div className='fixed bg-[#010007] h-fit flex flex-col px-8 justify-center pt-4 pb-8 rounded-md'>
+        <p className='text-white text-6xl font-semibold tracking-tighter px-4'>welcome to my</p>
+        <p className='bg-linear-90 from-[#5376FF] via-[#FF73B1] to-[#3DFF81] text-transparent -ml-3 bg-clip-text text-[24em] font-bold tracking-tight leading-90'>portfolio</p>
+      </div>
+      <p className='mt-132 text-4xl font-sans-alt tracking-tighter'>Nice to meet you! I'm Chris, another web developer passionate about building stuff.</p>
     </div>
   )
 }
