@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRef } from 'react';
 
-import picture2 from '../assets/picture2.jpg';
+import picture3 from '../assets/pictures-of-me/picture3.jpg';
 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -11,7 +11,7 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 
-const AboutMe = () => {
+const AboutMe: React.FC = () => {
   const container = useRef(null);
 
   useGSAP(
@@ -30,21 +30,27 @@ const AboutMe = () => {
   );
 
   return (
-    <div ref={container} className='aboutme-section bg-[#f3f3f3] w-full h-fit flex md:flex-row flex-col items-center lg:gap-20 gap-8 justify-center py-20 z-0'>
-      <div className='flex flex-col justify-center'>
-        <h2 className='font-sans text-[#2441FF] font-bold tracking-tighter
-        lg:text-7xl
-        md:text-6xl
-        sm:text-5xl
-        text-6xl'>about me</h2>
+    <div ref={container} className='aboutme-section bg-white flex m-auto justify-between items-center
+      xl:w-6xl
+      lg:w-4xl
+      md:w-2xl md:flex-row md:gap-0
+      sm:w-sm
+      flex-col w-2xs gap-4 py-16'>
+      <div className='flex flex-col justify-center
+      w-full'>
+        <h2 className='font-sans text-[#2441FF] font-bold tracking-tighter text-6xl'>
+          about me
+        </h2>
 
         <p className='font-sans-alt text-[#010007] mt-8 mb-4
-        xl:text-3xl xl:w-[22em]
-        lg:text-2xl lg:w-[18em] lg:leading-8
-        md:w-[16em] md:leading-6
-        sm:text-xl sm:w-md sm:leading-6
-        text-lg w-[16em] leading-5 tracking-tighter'>
-          As a web developer, I create solutions and experiences that <span className='font-bold font-sans'>feel smooth</span>, are <span className='font-bold font-sans'>easy to use</span>, and provide a <span className='font-bold font-sans'>good experience</span> to anyone.
+          xl:w-xl xl:text-2xl
+          lg:w-md lg:text-2xl
+          md:w-xs
+          sm:text-xl
+          text-xl'>
+
+          I''m a web developer based in Costa Rica who enjoys turning ideas into clean, well-structured digital experiences. <br /><br />
+          I care deeply about usability, accessibility, and thoughtful design, both in how things look and how they work under the hood.
         </p>
 
         <div className='flex items-center'>
@@ -60,22 +66,22 @@ const AboutMe = () => {
         </div>
 
         <button className='contact-button mt-8 bg-[#FFC471] text-[#010007] border border-[#010007] transition-all font-semibold rounded-full
-        lg:text-3xl
-        md:text-2xl md:w-3xs
-        sm:text-xl sm:w-md
-        text-lg w-full py-1
-        hover:bg-[#010007] hover:cursor-pointer hover:scale-105 hover:text-[#FFC471]'>
-          Contact me!
+          lg:text-3xl
+          md:text-2xl md:w-3xs md:ml-0
+          sm:text-xl sm:w-full
+          text-lg w-full m-auto py-1
+          hover:bg-[#010007] hover:cursor-pointer hover:scale-105 hover:text-[#FFC471]'>
+            Contact me!
         </button>
       </div>
       
-      <img src={picture2.src} alt="Picture of me"
-      className='relative rounded-lg border
-      xl:w-[22em]
-      lg:w-[20em]
-      md:w-[20em]
-      sm:w-md
-      w-2xs' />
+      <img src={picture3.src} alt="Picture of me"
+        className='relative rounded-lg border
+        xl:w-md
+        lg:w-sm
+        md:w-2xs
+        w-full'
+      />
     </div>
   )
 }

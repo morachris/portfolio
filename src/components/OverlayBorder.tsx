@@ -1,8 +1,10 @@
 import React from 'react';
 
 const OverlayBorder: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div className="fixed w-screen h-screen bg-transparent flex items-center justify-center pointer-events-none overflow-hidden z-20">
+    <div className="fixed w-screen h-screen bg-transparent flex items-center justify-center pointer-events-none overflow-hidden z-50">
       {/* SVG corregido: Eliminamos viewBox para que sea fluido y pegado a los bordes */}
       <svg
         className="absolute inset-0 min-w-screen min-h-screen z-0"
@@ -19,10 +21,10 @@ const OverlayBorder: React.FC = () => {
                para asegurar que el grosor del borde sea siempre el mismo y no se despegue.
             */}
             <rect 
-              x="2vw" 
-              y="3.5vh" 
-              width="calc(100% - 4vw)" 
-              height="calc(100% - 7vh)" 
+              x="0.7em" 
+              y="2em" 
+              width="calc(100vw - 1.3em)" 
+              height="calc(100vh - 4em)" 
               rx="10" 
               fill="black" 
             />
@@ -33,15 +35,15 @@ const OverlayBorder: React.FC = () => {
         <rect width="100%" height="100%" fill="#010007" mask="url(#holeMask)" />
       </svg>
       
-      {/* <span className="absolute font-semibold tracking-tight text-white z-20
-      top-0 text-[1.2em]">
+      <span className="absolute font-semibold tracking-tight text-white z-20
+      top-[0.2em] text-[1em]">
         CHRISTOPHER MORA &nbsp; ● &nbsp; WEB DEVELOPER
-      </span> */}
+      </span>
 
       <span className="absolute tracking-tight text-white z-20 font-sans-alt 
       
-      bottom-1 text-[1em]">
-        © 2025  &nbsp; | &nbsp;  Made with  ❤  by Christopher Mora
+      bottom-[0.2em] text-[1em]">
+        © {currentYear}  &nbsp; ● &nbsp;  Made with  ❤  by Christopher Mora
       </span>
     </div>
   );
