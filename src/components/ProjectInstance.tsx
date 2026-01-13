@@ -5,10 +5,10 @@ const ProjectInstance = ({ }) => {
     <div>
 
       <br /> 
-      <hr className='text-neutral-800' />
+      <hr className='text-neutral-300' />
       <br />
 
-      <h3 className='text-neutral-500 font-sans font-bold tracking-tight
+      <h3 className='text-neutral-500 font-sans font-semibold tracking-tight
       text-4xl'>
         project title
       </h3>
@@ -17,7 +17,7 @@ const ProjectInstance = ({ }) => {
         md:flex-row
         flex-col justify-between gap-8'>
 
-        <div className='font-sans-alt text-white
+        <div className='font-sans-alt text-[#010007]
           xl:text-2xl
           lg:w-2/3 lg:text-2xl
           md:w-2/4
@@ -29,14 +29,14 @@ const ProjectInstance = ({ }) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem corporis cumque ducimus repudiandae deleniti porro voluptas pariatur laudantium eligendi sequi quisquam recusandae esse et, ea, voluptate saepe doloribus tempore.
         </div>
 
-        <div className='flex text-white 
+        <div className='flex
           lg:w-1/3
           md:w-2/4
           gap-2 flex-col'>
           {/* Each image is a div. Replace later... */}
-          <div className='w-full h-56 bg-neutral-900'></div>
-          <div className='w-full h-56 bg-neutral-900'></div>
-          <div className='w-full h-56 bg-neutral-900'></div>
+          <div className='w-full h-56 bg-neutral-200'></div>
+          <div className='w-full h-56 bg-neutral-200'></div>
+          <div className='w-full h-56 bg-neutral-200'></div>
         </div>
       </div>
     </div>

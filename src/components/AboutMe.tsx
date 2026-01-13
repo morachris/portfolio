@@ -30,7 +30,7 @@ const AboutMe: React.FC = () => {
   );
 
   return (
-    <div ref={container} className='aboutme-section bg-white flex m-auto justify-between items-center
+    <div ref={container} className='aboutme-section flex m-auto justify-between items-center
       xl:w-6xl
       lg:w-4xl
       md:w-2xl md:flex-row md:gap-0
@@ -38,7 +38,7 @@ const AboutMe: React.FC = () => {
       flex-col w-2xs gap-4 py-16'>
       <div className='flex flex-col justify-center
       w-full'>
-        <h2 className='font-sans text-[#2441FF] font-bold tracking-tighter text-6xl'>
+        <h2 className='font-sans text-[#2441FF] tracking-tighter text-6xl'>
           about me
         </h2>
 
@@ -49,7 +49,7 @@ const AboutMe: React.FC = () => {
           sm:text-xl
           text-xl'>
 
-          I''m a web developer based in Costa Rica who enjoys turning ideas into clean, well-structured digital experiences. <br /><br />
+          I'm a web developer based in Costa Rica who enjoys turning ideas into clean, well-structured digital experiences. <br /><br />
           I care deeply about usability, accessibility, and thoughtful design, both in how things look and how they work under the hood.
         </p>
 
