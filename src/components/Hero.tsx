@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
   const imgContainer = useRef(null);
 
   return (
-    <div ref={container} className='bg-[url(../assets/background.png)] bg-center bg-no-repeat bg-cover overflow-hidden'>
+    <div ref={container} className='relative bg-[url(../assets/background.png)] bg-center bg-no-repeat bg-cover overflow-hidden'>
       <div className='w-full flex flex-col items-center min-h-screen'>
         <div className='overflow-hidden lg:mt-[15dvh] mt-[10dvh] m-auto z-10'>
           <div className='bg-[#010007] w-full h-fit flex flex-col justify-center rounded-md
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
           </div>
 
           <p className='main-paragraph font-sans-alt tracking-tighter
-            xl:text-[4.5dvh] xl:leading-[4.5dvh] xl:w-[33dvw]
+            xl:text-[4.5dvh] xl:leading-[4.5dvh] xl:w-[34.07dvw]
             lg:w-[35dvw] lg:leading-[4dvh]
             md:w-2xl
             sm:text-[4dvh] sm:leading-[4dvh] sm:w-lg
