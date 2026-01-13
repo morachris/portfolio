@@ -8,17 +8,17 @@ const Navigation: React.FC = () => {
     text-[1em] bottom-[3em] tracking-tighter mb-4'>
       <div className='bg-[#010007] flex items-center text-white rounded-full has-[:hover]:bg-transparent transition-normal duration-200
         '>
-        <button className='bg-[#010007] pl-6 pr-4 py-2 border border-neutral-800 rounded-l-full transition-all
+        <button className='bg-[#010007] pl-6 pr-4 py-2 rounded-l-full transition-all
         hover:bg-[#2441FF] hover:font-semibold hover:mr-4 hover:pr-8 hover:rounded-full hover:outline-1 hover:outline-[#010007] hover:cursor-pointer'>
           contact me
         </button>
 
-        <button className='bg-[#010007] px-4 py-2 border border-neutral-800 transition-all
-        hover:bg-[#2441FF] hover:font-semibold hover:ml-4 hover:mr-4 hover:pl-8 hover:pr-8 hover:rounded-full hover:border-none hover:outline-1 hover:outline-[#010007] hover:cursor-pointer'>
+        <button className='bg-[#010007] px-4 py-2 transition-all
+        hover:bg-[#2441FF] hover:font-semibold hover:ml-4 hover:mr-4 hover:pl-8 hover:pr-8 hover:rounded-full hover:outline-1 hover:outline-[#010007] hover:cursor-pointer'>
           about me
         </button>
 
-        <button className='bg-[#010007] pl-4 pr-6 py-2 border border-neutral-800 rounded-r-full transition-all
+        <button className='bg-[#010007] pl-4 pr-6 py-2 rounded-r-full transition-all
         hover:bg-[#2441FF] hover:font-semibold hover:ml-4 hover:pl-8 hover:rounded-full hover:outline-1 hover:outline-[#010007] hover:cursor-pointer'>
           projects
         </button>

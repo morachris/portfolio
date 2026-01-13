@@ -1,43 +1,33 @@
 import React from 'react'
 
-const ProjectInstance = ({ }) => {
+interface Props {
+  title: string,
+  description: string,
+  imageUrl?: string,
+}
+
+const ProjectInstance: React.FC<Props> = ({ title, description, imageUrl }: Props) => {
   return (
-    <div>
-
-      <br /> 
-      <hr className='text-neutral-300' />
-      <br />
-
-      <h3 className='text-neutral-500 font-sans font-semibold tracking-tight
-      text-4xl'>
-        project title
-      </h3>
-
-      <div className='flex my-4 w-full
-        md:flex-row
-        flex-col justify-between gap-8'>
-
-        <div className='font-sans-alt text-[#010007]
-          xl:text-2xl
-          lg:w-2/3 lg:text-2xl
-          md:w-2/4
-          sm:text-xl
-          text-xl'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis illum temporibus officiis tenetur deleniti quidem, suscipit veniam eos atque, excepturi, nemo cum? Dolor harum asperiores excepturi quod ipsam deserunt accusantium.
-          <br /><br />
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem corporis cumque ducimus repudiandae deleniti porro voluptas pariatur laudantium eligendi sequi quisquam recusandae esse et, ea, voluptate saepe doloribus tempore.
-        </div>
-
-        <div className='flex
-          lg:w-1/3
-          md:w-2/4
-          gap-2 flex-col'>
-          {/* Each image is a div. Replace later... */}
-          <div className='w-full h-56 bg-neutral-200'></div>
-          <div className='w-full h-56 bg-neutral-200'></div>
-          <div className='w-full h-56 bg-neutral-200'></div>
-        </div>
+    <div className='group rounded-xl bg-neutral-300 flex flex-col border border-neutral-300 
+      xl:w-[23em]
+      lg:w-2xs
+      md:w-[13.5em]
+      w-full
+      hover:cursor-pointer hover:scale-105 hover:border-black hover:shadow-[0_0_15px_rgba(0,0,0,0.3)] transition-all'>
+      <div className='bg-neutral-100 h-full rounded-t-xl inset-shadow-sm inset-shadow-neutral-300
+        xl:min-h-[28.5em]
+        lg:min-h-[22.4em]
+        md:min-h-[16.6em]'>
+        <img src={imageUrl} alt="Project Cover" className='rounded-t-xl w-full h-full object-cover' />
+      </div>
+      <div className='p-4 bg-neutral-200 rounded-b-xl border-t border-neutral-300 group-hover:bg-black'>
+        <h3 className='font-sans text-2xl group-hover:text-[#FF7DB7] font-semibold
+          md:text-xl'>
+          {title}
+        </h3>
+        <p className='font-sans-alt text-lg text-neutral-700 group-hover:text-white'>
+          {description}
+        </p>
       </div>
     </div>
   )

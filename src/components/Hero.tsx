@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
             md:w-2xl
             sm:text-[4dvh] sm:leading-[4dvh] sm:w-lg
             text-[3dvh] w-xs leading-[3dvh] mt-[2dvh]'>
-            I'm Chris, a web developer focused on <span className='font-bold font-sans tracking-normal'>structure</span>, <span className='font-bold font-sans tracking-normal'>usability</span>, and <span className='font-bold font-sans tracking-normal'>thoughtful</span> design.
+            I'm Chris, a web developer focused on <span className='font-semibold font-sans tracking-normal'>structure</span>, <span className='font-semibold font-sans tracking-normal'>usability</span>, and <span className='font-semibold font-sans tracking-normal'>thoughtful</span> design.
           </p>
         </div>
 
