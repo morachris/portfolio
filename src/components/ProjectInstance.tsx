@@ -3,34 +3,60 @@ import React from 'react'
 interface Props {
   title: string,
   description: string,
-  imageUrl?: string,
+  specs: {
+    date: string,
+    type: string,
+  },
+  markdownContent: string,
+  images: [string],
 }
 
-const ProjectInstance: React.FC<Props> = ({ title, description, imageUrl }: Props) => {
+const ProjectInstance: React.FC<Props> = ({ title, description, specs, markdownContent, images }: Props) => {
   return (
-    <div className='group rounded-xl bg-neutral-300 flex flex-col border border-neutral-300 
-      xl:w-[23em]
-      lg:w-2xs
-      md:w-[13.5em]
-      w-full
-      hover:cursor-pointer hover:scale-105 hover:border-black hover:shadow-[0_0_15px_rgba(0,0,0,0.3)] transition-all'>
-      <div className='bg-neutral-100 h-full rounded-t-xl inset-shadow-sm inset-shadow-neutral-300
-        xl:min-h-[28.5em]
-        lg:min-h-[22.4em]
-        md:min-h-[16.6em]'>
-        <img src={imageUrl} alt="Project Cover" className='rounded-t-xl w-full h-full object-cover' />
-      </div>
-      <div className='p-4 bg-neutral-200 rounded-b-xl border-t border-neutral-300 group-hover:bg-black'>
-        <h3 className='font-sans text-2xl group-hover:text-[#FF7DB7] font-semibold
-          md:text-xl'>
+    <div className='min-h-screen w-full overflow-hidden py-32'>
+      <div className='m-auto flex flex-col justify-center gap-4 text-[#010007]
+        xl:w-6xl'>
+        <h1 className='font-sans m-auto
+          xl:text-8xl'>
           {title}
-        </h3>
-        <p className='font-sans-alt text-lg text-neutral-700 group-hover:text-white'>
+        </h1>
+
+        <p className='font-sans-alt text-center tracking-tighter
+          xl:text-xl'>
           {description}
         </p>
+
+        <div className='bg-black mt-4 m-auto rounded-md text-white flex justify-center items-center
+          xl:w-xl
+          gap-16 py-3 px-4'>
+          <div className='flex flex-col tracking-tighter
+            xl:text-md'>
+            <label htmlFor="date-timeline">
+              Timeline:
+            </label>
+            <p className='text-neutral-400'>
+              {specs.date}
+            </p>
+          </div>
+
+          <div>
+            <label htmlFor="type">
+              Type:
+            </label>
+            <p className='text-neutral-400'>
+              {specs.type}
+            </p>
+          </div>
+        </div>
+
+        <div className='prose text-2xl 
+          prose-p:text-lg prose-li:text-lg prose-table:text-lg'
+          dangerouslySetInnerHTML={{ __html: markdownContent }}
+          suppressHydrationWarning>
+        </div>
       </div>
     </div>
   )
 }
 
-export default ProjectInstance;
+export default ProjectInstance

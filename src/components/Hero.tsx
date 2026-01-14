@@ -40,11 +40,11 @@ const Hero: React.FC = () => {
           </div>
 
           <p className='main-paragraph font-sans-alt tracking-tighter
-            xl:text-[4.5dvh] xl:leading-[4.5dvh] xl:w-[34.07dvw]
-            lg:w-[35dvw] lg:leading-[4dvh]
+            xl:text-[4.5dvh] xl:leading-[5dvh] xl:w-[34.07dvw]
+            lg:w-[35dvw]
             md:w-2xl
-            sm:text-[4dvh] sm:leading-[4dvh] sm:w-lg
-            text-[3dvh] w-xs leading-[3dvh] mt-[2dvh]'>
+            sm:text-[4dvh] sm:leading-[4.5dvh] sm:w-lg
+            text-[3dvh] w-xs leading-[3.5dvh] mt-[2dvh]'>
             I'm Chris, a web developer focused on <span className='font-semibold font-sans tracking-normal'>structure</span>, <span className='font-semibold font-sans tracking-normal'>usability</span>, and <span className='font-semibold font-sans tracking-normal'>thoughtful</span> design.
           </p>
         </div>

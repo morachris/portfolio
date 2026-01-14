@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
 @theme {
   --font-sans: "Bricolage Grotesque", sans-serif;
-  --font-sans-alt: "Gabarito", sans-serif;
+  --font-sans-alt: "Shippori Antique", sans-serif;
 }

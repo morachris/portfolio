@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
               Contact Me
             </h3>
 
-            <div className='flex flex-col gap-2 underline font-sans-alt'>
+            <div className='flex flex-col gap-2 underline font-sans-alt tracking-tighter'>
 
               {/* Gmail Contact */}
               <span className='flex flex-row gap-2 items-center 
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
               Socials
             </h3>
 
-            <div className='flex flex-col gap-2 underline font-sans-alt'>
+            <div className='flex flex-col gap-2 underline font-sans-alt tracking-tighter'>
 
               {/* LinkedIn Profile */}
               <span className='flex flex-row gap-2 items-center 
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
               Quick Links
             </h3>
 
-            <div className='flex flex-col gap-3 underline font-sans-alt'>
+            <div className='flex flex-col gap-3 underline font-sans-alt tracking-tighter'>
               <p>About me</p>
               <p>Contact</p>
               <p>Projects</p>

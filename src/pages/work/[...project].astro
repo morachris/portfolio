@@ -1,0 +1,84 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import OverlayBorder from '../../components/OverlayBorder';
+import ProjectInstance from '../../components/ProjectInstance';
+import Navigation from '../../components/Navigation';
+import type { MarkdownInstance } from 'astro';
+
+export async function getStaticPaths() {
+  const mdFiles = await Astro.glob('../../content/*.md');
+  const glintContent: MarkdownInstance<any> = mdFiles.find((glint) => glint.file.includes('glint.md'))!;
+  const glintHTML = await glintContent.compiledContent();
+
+  const projects: any[] = [
+    {
+      slug: 'lumidir-habits',
+      title: 'Lumidir Habits',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      specs: {
+        date: 'December 2025 - Present',
+        type: 'Personal Web Application',
+      },
+      markdownContent: '',
+      images: [
+        '../../assets/project-images/lumidir-habits-1.png',
+        '../../assets/project-images/lumidir-habits-2.png',
+        '../../assets/project-images/lumidir-habits-3.png',
+      ],
+    },
+    { 
+      slug: 'automation-project',
+      title: 'Automation Project',
+      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+      specs: {
+        date: 'April 2025 - August 2025',
+        type: 'Personal Web Application',
+      },
+      markdownContent: '',
+      images: [
+        '../../assets/project-images/automation-1.png',
+        '../../assets/project-images/automation-2.png',
+        '../../assets/project-images/automation-3.png',
+      ],
+    },
+    {
+      slug: 'glint',
+      title: 'Glint',
+      description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.',
+      specs: {
+        date: 'March 2025 - July 2025',
+        type: 'Personal Web Application',
+      },
+      markdownContent: glintHTML,
+      images: [
+        '../../assets/project-images/glint-1.png',
+        '../../assets/project-images/glint-2.png',
+        '../../assets/project-images/glint-3.png',
+      ],
+    },
+  ]
+
+  return projects.map(({ slug, title, description, specs, markdownContent, images }) => {
+    return {
+      params: { project: slug },
+      props: { title, description, specs, markdownContent, images },
+    };
+  })
+}
+
+const { title, description, specs, markdownContent, images } = Astro.props;
+
+---
+<Layout>
+  <OverlayBorder />
+  <div class="main-wrapper">
+    <ProjectInstance 
+      title={title} 
+      description={description}
+      specs={specs}
+      markdownContent={markdownContent}
+      images={images}
+      client:load />
+    <Navigation client:load />
+  </div>
+</Layout>

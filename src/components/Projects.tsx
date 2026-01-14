@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectInstance from './ProjectInstance';
+import ProjectCard from './ProjectCard';
 import GlintCover from '../assets/project-images/glint-cover.png';
 import AutomationCover from '../assets/project-images/automation-cover.png';
 
@@ -21,9 +21,9 @@ const Projects = () => {
         <div className='relative w-full flex items-center gap-4
         md:flex-row md:flex-wrap md:gap-0 md:justify-between
         flex-col'>
-          <ProjectInstance title={"Lumidir Habits"} description={"lorem ipsum"} />
-          <ProjectInstance title={"Automation Project"} description={"lorem ipsum"} imageUrl={AutomationCover.src} />
-          <ProjectInstance title={"Glint"} description={"lorem ipsum"} imageUrl={GlintCover.src} />
+          <ProjectCard title={"Lumidir Habits"} description={"lorem ipsum"} />
+          <ProjectCard title={"Automation Project"} description={"lorem ipsum"} imageUrl={AutomationCover.src} />
+          <ProjectCard title={"Glint"} description={"lorem ipsum"} imageUrl={GlintCover.src} />
         </div>
       </div>
     </div>
