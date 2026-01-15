@@ -14,7 +14,7 @@ const Projects = () => {
         sm:w-sm
         w-2xs m-auto gap-8'>
 
-        <h2 className='font-sans text-[#FF7DB7] tracking-tighter text-6xl'>
+        <h2 className='font-sans text-[#2441FF] tracking-tighter text-6xl'>
           my selected work
         </h2>
 

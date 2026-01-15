@@ -1,15 +1,14 @@
 ## 🎯 Goal
-
+---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
 * **Lorem Ipsum:** Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 * **Dolor Sit Amet:** Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 * **Consectetur:** Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
 
----
 
 ## 🛠 Tech Stack
-
+---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ### Technical Specifications
@@ -25,10 +24,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * **Quis nostrud:** Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 * **Ullamco laboris:** Ut aliquip ex ea commodo consequat.
 
----
 
 ## ✨ Key Highlights
-
+---
 ### 1. Lorem Ipsum Methodologies
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
 
 @import "tailwindcss";
-@plugin '@tailwindcss/typography';
+@plugin "@tailwindcss/typography";
 
 @theme {
   --font-sans: "Bricolage Grotesque", sans-serif;

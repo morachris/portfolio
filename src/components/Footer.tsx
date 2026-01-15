@@ -17,12 +17,12 @@ const Footer: React.FC = () => {
           wish to connect?
         </h3>
 
-        <h2 className='font-sans font-thin bg-linear-90 from-[#2441FF] via-[#FF7DB7] to-[#FFC471] text-transparent bg-clip-text tracking-tighter 
-        xl:text-[12em] xl:leading-50
+        <h2 className='font-sans bg-linear-90 from-[#2441FF] via-[#FF7DB7] to-[#FFC471] text-transparent bg-clip-text tracking-tighter 
+        xl:text-[11.9em] xl:leading-50
         lg:text-[9em] lg:leading-40
-        md:text-[7em]
-        sm:text-[8em] sm:leading-30
-        text-[6em] leading-25 mb-8'>
+        md:text-[6.9em]
+        sm:text-[7.6em] sm:leading-30
+        text-[5.7em] leading-25 mb-8'>
           let's get in touch!
         </h2>
 
