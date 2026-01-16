@@ -1,50 +1,42 @@
-## 🎯 Goal
+## Goals
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
-* **Lorem Ipsum:** Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-* **Dolor Sit Amet:** Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-* **Consectetur:** Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+* **Productivity-Centered Design:** Focused on reducing cognitive load by organizing tasks into workspaces and contextual notes.
+* **Centralized Task Management:** Enables tracking and managing tasks from a single, unified platform.
 
 
-## 🛠 Tech Stack
+## Tech Stack
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Glint was developed using a modern JavaScript-based full-stack approach, combining a reactive frontend with a reliable backend and a relational database.
 
 ### Technical Specifications
 | Category | Technology | Usage |
 | :--- | :--- | :--- |
-| **Lorem** | Ipsum | Dolor sit amet |
-| **Consectetur** | Adipiscing | Elit sed do |
-| **Eiusmod** | Tempor | Incididunt ut |
-| **Labore** | Et Dolore | Magna aliqua |
+| **Frontend** | React | User interface and state management |
+| **Backend** | Node.js (Express) | REST API and application logic |
+| **Database** | MySQL (mysql2) | Persistent data storage for tasks, workspaces, and notes |
+| **Architecture** | Monolithic | Unified deployment of frontend and backend |
 
 ### Infrastructure & Tooling
-* **Ut enim ad minim:** Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-* **Quis nostrud:** Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-* **Ullamco laboris:** Ut aliquip ex ea commodo consequat.
+* **Cloud Hosting:** Deployed on Microsoft Azure using Virtual Machines (IaaS).
+* **Server Environment:** Linux-based VM running the Node.js application.
+* **Version Control:** Git for source code management and collaboration.
 
 
-## ✨ Key Highlights
+## Key Highlights
 ---
-### 1. Lorem Ipsum Methodologies
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+### 1. Workspace-Based Task Organization
+Glint introduces a workspace system that allows to separate tasks by projects, personal goals, or contexts. This structure improves clarity and helps focus on what matters most without overwhelming task lists.
 
-> **Note:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+> **Note:** Each workspace can contain its own set of tasks and notes, enabling better contextual organization.
 
-### 2. Dolor Sit Amet Scalability
-* **Feature Alpha:** Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-* **Feature Beta:** Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-* **Feature Gamma:** Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-
-### 3. Consectetur Adipiscing Performance
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua:
-$$L = \sum_{i=1}^{n} (x_i - \bar{x})^2$$
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### 2. Integrated Notes System
+* **Contextual Notes:** Notes can be attached to specific workspaces to capture ideas, references, or reminders.
+* **Lightweight Editing:** Designed for quick input without disrupting the workflow.
 
 ---
 
-### 🚀 Getting Started
-1. `git clone https://loremipsum.com/dolor.git`
-2. `lorem-install --sit-amet`
-3. `run start-consectetur`
+### Getting Started
+1. `git clone https://github.com/morachris/glint-app.git`
+2. `npm install`
+3. `npm run dev`

@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
             md:px-8 md:pb-0
             px-4 pt-4 pb-4'>
 
-            <p className='main-heading text-white font-normal
+            <p className='main-heading text-neutral-200 font-normal
               xl:text-6xl 
               lg:text-5xl
               md:text-4xl

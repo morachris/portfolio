@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer: React.FC = () => {
   return (
-    <div className='bg-[#010007] flex justify-center items-center min-h-screen w-full h-fit text-white z-50'>
+    <div className='bg-[#010007] border-t border-neutral-800 flex justify-center items-center min-h-screen w-full h-fit text-neutral-200 z-50'>
       <div className='flex flex-col justify-center
         xl:w-6xl
         lg:w-4xl
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
           wish to connect?
         </h3>
 
-        <h2 className='font-sans bg-linear-90 from-[#2441FF] via-[#FF7DB7] to-[#FFC471] text-transparent bg-clip-text tracking-tighter 
+        <h2 className='font-sans bg-linear-90 from-[#2441FF] via-[#FF7DB7] to-[#FFC471] text-transparent bg-clip-text tracking-tighter
         xl:text-[11.9em] xl:leading-50
         lg:text-[9em] lg:leading-40
         md:text-[6.9em]

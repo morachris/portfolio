@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import OverlayBorder from '../../components/OverlayBorder';
 import ProjectInstance from '../../components/ProjectInstance';
 import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
 import type { MarkdownInstance } from 'astro';
 
 export async function getStaticPaths() {
@@ -44,7 +45,7 @@ export async function getStaticPaths() {
     {
       slug: 'glint',
       title: 'Glint',
-      description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.',
+      description: 'Glint is a productivity-focused task management application developed as an academic/personal designed to help organize work efficiently through structured workspaces and an integrated notes system. The primary goal of the project is to provide a clean, intuitive environment to manage tasks and group them by context, as well as making use of the services Microsoft Azure provides.',
       specs: {
         date: 'March 2025 - July 2025',
         type: 'Personal Web Application',
@@ -81,4 +82,20 @@ const { title, description, specs, markdownContent, images } = Astro.props;
       client:load />
     <Navigation client:load />
   </div>
+  <Footer client:load />
 </Layout>
+
+<style>
+  .main-wrapper {
+    background-image: url('../../assets/background-dark.png');
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+</style>
