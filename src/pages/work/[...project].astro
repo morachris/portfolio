@@ -4,12 +4,25 @@ import OverlayBorder from '../../components/OverlayBorder';
 import ProjectInstance from '../../components/ProjectInstance';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
+
+import Auto1 from '../../assets/project-images/automation/automation-1.jpeg';
+import Auto2 from '../../assets/project-images/automation/automation-2.jpeg';
+import Auto3 from '../../assets/project-images/automation/automation-3.jpeg';
+import Auto4 from '../../assets/project-images/automation/automation-4.jpeg';
+
+import Glint1 from '../../assets/project-images/glint/glint-1.jpeg';
+import Glint2 from '../../assets/project-images/glint/glint-2.jpeg';
+import Glint3 from '../../assets/project-images/glint/glint-3.jpeg';
+import Glint4 from '../../assets/project-images/glint/glint-4.jpeg';
+
 import type { MarkdownInstance } from 'astro';
 
 export async function getStaticPaths() {
   const mdFiles = await Astro.glob('../../content/*.md');
   const glintContent: MarkdownInstance<any> = mdFiles.find((glint) => glint.file.includes('glint.md'))!;
+  const automationContent: MarkdownInstance<any> = mdFiles.find((auto) => auto.file.includes('automation.md'))!;
   const glintHTML = await glintContent.compiledContent();
+  const automationHTML = await automationContent.compiledContent();
 
   const projects: any[] = [
     {
@@ -30,31 +43,41 @@ export async function getStaticPaths() {
     { 
       slug: 'automation-project',
       title: 'Automation Project',
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+      description: `This project is a purely academic automation and educational web application designed to support students in understanding the fundamental concepts of Object-Oriented Programming (OOP).
+      
+      Its primary goal is to reduce learning barriers by combining structured theoretical content with hands-on practical exercises. 
+      
+      The application was specifically developed for fifth-year students in the Web Development program at Don Bosco Technical Professional High School and was not intended for commercial use or production environments.`,
       specs: {
         date: 'April 2025 - August 2025',
-        type: 'Personal Web Application',
+        type: 'Academic Web Application',
       },
-      markdownContent: '',
+      markdownContent: automationHTML,
       images: [
-        '../../assets/project-images/automation-1.png',
-        '../../assets/project-images/automation-2.png',
-        '../../assets/project-images/automation-3.png',
+        Auto1,
+        Auto2,
+        Auto3,
+        Auto4,
       ],
     },
     {
       slug: 'glint',
       title: 'Glint',
-      description: 'Glint is a productivity-focused task management application developed as an academic/personal designed to help organize work efficiently through structured workspaces and an integrated notes system. The primary goal of the project is to provide a clean, intuitive environment to manage tasks and group them by context, as well as making use of the services Microsoft Azure provides.',
+      description: `
+        Glint is a productivity-focused task management application developed as an academic/personal designed to help organize work efficiently through structured workspaces and an integrated notes system.
+        
+        The primary goal of the project is to provide a clean, intuitive environment to manage tasks and group them by context, as well as making use of the services Microsoft Azure provides.
+      `,
       specs: {
         date: 'March 2025 - July 2025',
         type: 'Personal Web Application',
       },
       markdownContent: glintHTML,
       images: [
-        '../../assets/project-images/glint-1.png',
-        '../../assets/project-images/glint-2.png',
-        '../../assets/project-images/glint-3.png',
+        Glint1,
+        Glint2,
+        Glint3,
+        Glint4,
       ],
     },
   ]
@@ -88,7 +111,7 @@ const { title, description, specs, markdownContent, images } = Astro.props;
 <style>
   .main-wrapper {
     background-image: url('../../assets/background-dark.png');
-    background-color: black;
+    background-color: #010007;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

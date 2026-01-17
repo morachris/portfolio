@@ -13,7 +13,7 @@ const ProjectCard: React.FC<Props> = ({ title, description, imageUrl }: Props) =
       lg:w-2xs
       md:w-[13.5em]
       w-full
-      hover:cursor-pointer hover:scale-105 hover:border-black hover:shadow-[0_0_15px_rgba(0,0,0,0.3)] transition-all'>
+      hover:cursor-pointer hover:scale-105 hover:border-[#010007] hover:shadow-[0_0_15px_rgba(0,0,0,0.3)] transition-all'>
       <div className='bg-neutral-100 h-full rounded-t-xl inset-shadow-sm inset-shadow-neutral-300
         xl:min-h-[28.5em]
         lg:min-h-[22.4em]

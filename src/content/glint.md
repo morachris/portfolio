@@ -38,5 +38,6 @@ Glint introduces a workspace system that allows to separate tasks by projects, p
 
 ### Getting Started
 1. `git clone https://github.com/morachris/glint-app.git`
-2. `npm install`
-3. `npm run dev`
+2. Run `npm install` to install dependencies.
+3. Start both servers using:
+   `npm run dev`

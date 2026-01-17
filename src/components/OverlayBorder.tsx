@@ -26,7 +26,7 @@ const OverlayBorder: React.FC = () => {
               width="calc(100vw - 1.3em)" 
               height="calc(100vh - 4em)" 
               rx="10" 
-              fill="black" 
+              fill="#010007" 
             />
           </mask>
         </defs>
