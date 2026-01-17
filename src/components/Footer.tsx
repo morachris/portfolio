@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer: React.FC = () => {
   return (
-    <div className='bg-[#010007] flex justify-center items-center min-h-screen w-full h-fit text-white z-50'>
+    <div className='bg-[#010007] border-t border-neutral-800 flex justify-center items-center min-h-screen w-full h-fit text-neutral-200 z-50'>
       <div className='flex flex-col justify-center
         xl:w-6xl
         lg:w-4xl
@@ -17,12 +17,12 @@ const Footer: React.FC = () => {
           wish to connect?
         </h3>
 
-        <h2 className='font-sans font-thin bg-linear-90 from-[#2441FF] via-[#FF7DB7] to-[#FFC471] text-transparent bg-clip-text tracking-tighter 
-        xl:text-[12em] xl:leading-50
+        <h2 className='font-sans bg-linear-90 from-[#2441FF] via-[#FF7DB7] to-[#FFC471] text-transparent bg-clip-text tracking-tighter
+        xl:text-[11.9em] xl:leading-50
         lg:text-[9em] lg:leading-40
-        md:text-[7em]
-        sm:text-[8em] sm:leading-30
-        text-[6em] leading-25 mb-8'>
+        md:text-[6.9em]
+        sm:text-[7.6em] sm:leading-30
+        text-[5.7em] leading-25 mb-8'>
           let's get in touch!
         </h2>
 
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
               Contact Me
             </h3>
 
-            <div className='flex flex-col gap-2 underline font-sans-alt'>
+            <div className='flex flex-col gap-2 underline font-sans-alt tracking-tighter'>
 
               {/* Gmail Contact */}
               <span className='flex flex-row gap-2 items-center 
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
               Socials
             </h3>
 
-            <div className='flex flex-col gap-2 underline font-sans-alt'>
+            <div className='flex flex-col gap-2 underline font-sans-alt tracking-tighter'>
 
               {/* LinkedIn Profile */}
               <span className='flex flex-row gap-2 items-center 
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
               Quick Links
             </h3>
 
-            <div className='flex flex-col gap-3 underline font-sans-alt'>
+            <div className='flex flex-col gap-3 underline font-sans-alt tracking-tighter'>
               <p>About me</p>
               <p>Contact</p>
               <p>Projects</p>

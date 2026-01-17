@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
             md:px-8 md:pb-0
             px-4 pt-4 pb-4'>
 
-            <p className='main-heading text-white font-normal
+            <p className='main-heading text-neutral-200 font-normal
               xl:text-6xl 
               lg:text-5xl
               md:text-4xl
@@ -40,12 +40,12 @@ const Hero: React.FC = () => {
           </div>
 
           <p className='main-paragraph font-sans-alt tracking-tighter
-            xl:text-[4.5dvh] xl:leading-[4.5dvh] xl:w-[34.07dvw]
-            lg:w-[35dvw] lg:leading-[4dvh]
+            xl:text-[4.5dvh] xl:leading-[5dvh] xl:w-[34.07dvw]
+            lg:w-[35dvw]
             md:w-2xl
-            sm:text-[4dvh] sm:leading-[4dvh] sm:w-lg
-            text-[3dvh] w-xs leading-[3dvh] mt-[2dvh]'>
-            I'm Chris, a web developer focused on <span className='font-bold font-sans tracking-normal'>structure</span>, <span className='font-bold font-sans tracking-normal'>usability</span>, and <span className='font-bold font-sans tracking-normal'>thoughtful</span> design.
+            sm:text-[4dvh] sm:leading-[4.5dvh] sm:w-lg
+            text-[3dvh] w-xs leading-[3.5dvh] mt-[2dvh]'>
+            I'm Chris, a web developer focused on <span className='font-semibold font-sans tracking-normal'>structure</span>, <span className='font-semibold font-sans tracking-normal'>usability</span>, and <span className='font-semibold font-sans tracking-normal'>thoughtful</span> design.
           </p>
         </div>
 

@@ -6,23 +6,37 @@ const Navigation: React.FC = () => {
     md:text-[1.6em] md:-my-[1.6em] md:mb-8
     sm:text-[1.5em] sm:-my-[1.5em] sm:bottom-[3em] sm:mb-8
     text-[1em] bottom-[3em] tracking-tighter mb-4'>
-      <div className='bg-[#010007] flex items-center text-white rounded-full has-[:hover]:bg-transparent transition-normal duration-200
-        '>
-        <button className='bg-[#010007] pl-6 pr-4 py-2 border border-neutral-800 rounded-l-full transition-all
-        hover:bg-[#2441FF] hover:font-semibold hover:mr-4 hover:pr-8 hover:rounded-full hover:outline-1 hover:outline-[#010007] hover:cursor-pointer'>
-          contact me
-        </button>
+        <a className='rounded-l-[28px] transition-all py-0.5 pl-0.5 pr-px bg-neutral-800 flex justify-center items-center 
+        group
+          hover:bg-linear-90 hover:from-[#2441FF] hover:via-[#FF7DB7] hover:to-[#FFC471] hover:cursor-pointer hover:mr-4 hover:rounded-[28px] hover:shadow-[0_0_30px_rgba(36,65,255,0.7)]'>
+            <div className='bg-[#010007] text-neutral-200 w-full h-full py-2 px-4 rounded-l-[28px] group-hover:rounded-[28px] transition-all'>
+              about
+            </div>
+        </a>
 
-        <button className='bg-[#010007] px-4 py-2 border border-neutral-800 transition-all
-        hover:bg-[#2441FF] hover:font-semibold hover:ml-4 hover:mr-4 hover:pl-8 hover:pr-8 hover:rounded-full hover:border-none hover:outline-1 hover:outline-[#010007] hover:cursor-pointer'>
-          about me
-        </button>
+        <a className='transition-all py-0.5 px-px bg-neutral-800 flex justify-center items-center rounded-none 
+        group
+          hover:bg-linear-90 hover:from-[#2441FF] hover:via-[#FF7DB7] hover:to-[#FFC471] hover:cursor-pointer hover:mx-4 hover:rounded-[28px] hover:shadow-[0_0_30px_rgba(36,65,255,0.7)]'>
+            <div className='bg-[#010007] text-neutral-200 w-full h-full py-2 px-4 rounded-none group-hover:rounded-[28px] transition-all'>
+              projects
+            </div>
+        </a>
 
-        <button className='bg-[#010007] pl-4 pr-6 py-2 border border-neutral-800 rounded-r-full transition-all
-        hover:bg-[#2441FF] hover:font-semibold hover:ml-4 hover:pl-8 hover:rounded-full hover:outline-1 hover:outline-[#010007] hover:cursor-pointer'>
-          projects
-        </button>
-      </div>
+        <a className='transition-all py-0.5 px-px bg-neutral-800 flex justify-center items-center rounded-none 
+        group
+          hover:bg-linear-90 hover:from-[#2441FF] hover:via-[#FF7DB7] hover:to-[#FFC471] hover:cursor-pointer hover:mx-4 hover:rounded-[28px] hover:shadow-[0_0_30px_rgba(36,65,255,0.7)]'>
+            <div className='bg-[#010007] text-neutral-200 w-full h-full py-2 px-4 rounded-none group-hover:rounded-[28px] transition-all'>
+              contact
+            </div>
+        </a>
+
+        <a className='rounded-r-[28px] transition-all py-0.5 pr-0.5 pl-px bg-neutral-800 flex justify-center items-center 
+        group
+          hover:bg-linear-90 hover:from-[#2441FF] hover:via-[#FF7DB7] hover:to-[#FFC471] hover:cursor-pointer hover:ml-4 hover:rounded-[28px] hover:shadow-[0_0_30px_rgba(36,65,255,0.7)]'>
+            <div className='bg-[#010007] text-neutral-200 w-full h-full py-2 px-4 rounded-r-[28px] group-hover:rounded-[28px] transition-all'>
+              resume
+            </div>
+        </a>
     </nav>
   );
 }

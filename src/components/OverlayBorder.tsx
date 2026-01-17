@@ -26,7 +26,7 @@ const OverlayBorder: React.FC = () => {
               width="calc(100vw - 1.3em)" 
               height="calc(100vh - 4em)" 
               rx="10" 
-              fill="black" 
+              fill="#010007" 
             />
           </mask>
         </defs>
@@ -35,12 +35,12 @@ const OverlayBorder: React.FC = () => {
         <rect width="100%" height="100%" fill="#010007" mask="url(#holeMask)" />
       </svg>
       
-      <span className="absolute font-semibold tracking-tight text-white z-20
+      <span className="absolute font-semibold tracking-tight text-neutral-200 z-20
       top-[0.2em] text-[1em]">
         CHRISTOPHER MORA &nbsp; ● &nbsp; WEB DEVELOPER
       </span>
 
-      <span className="absolute tracking-tight text-white z-20 font-sans-alt 
+      <span className="absolute tracking-tight text-neutral-200 z-20 font-sans-alt 
       
       bottom-[0.2em] text-[1em]">
         © {currentYear}  &nbsp; ● &nbsp;  Made with  ❤  by Christopher Mora
