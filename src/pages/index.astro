@@ -2,12 +2,32 @@
 import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.tsx';
 import Hero from '../components/Hero.tsx';
+import AboutMe from '../components/AboutMe';
+import Projects from '../components/Projects';
+import Footer from '../components/Footer';
+import OverlayBorder from '../components/OverlayBorder';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Navigation />
-	<Hero />
+  <OverlayBorder />
+  <div class="main-wrapper">
+    <Hero client:load />
+    <AboutMe client:load />
+    <Projects client:load />
+    <Navigation client:load />
+  </div>
+  <Footer client:load />
 </Layout>
+
+<style>
+  .main-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border-bottom: 1px solid #F3F3F3;
+  }
+</style>
