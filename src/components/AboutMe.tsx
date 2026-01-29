@@ -38,7 +38,8 @@ const AboutMe: React.FC = () => {
       flex-col w-2xs gap-4 py-16'>
       <div className='flex flex-col justify-center
       w-full'>
-        <h2 className='font-sans text-[#2441FF] tracking-tighter text-6xl'>
+        <h2 id='about-me'
+          className='font-sans text-[#2441FF] tracking-tighter text-6xl scroll-mt-20'>
           about me
         </h2>
 
@@ -71,9 +72,10 @@ const AboutMe: React.FC = () => {
           sm:text-xl sm:w-full
           text-lg w-full h-12 m-auto p-0.5
           hover:bg-linear-90 hover:from-[#2441FF] hover:via-[#FF7DB7] hover:to-[#FFC471] hover:shadow-[0_0_30px_rgba(36,65,255,0.7)] hover:cursor-pointer hover:scale-105'>
-            <div className='bg-[#010007] h-full flex items-center justify-center rounded-full'>
-              Contact me!
-            </div>
+            <a href='/contact' 
+              className='bg-[#010007] h-full flex items-center justify-center rounded-full'>
+              contact me!
+            </a>
         </a>
       </div>
       
