@@ -1,7 +1,8 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import GlintCover from '../assets/project-images/glint-cover.png';
+import LumidirCover from '../assets/project-images/lumidir-cover.png';
 import AutomationCover from '../assets/project-images/automation-cover.png';
+import GlintCover from '../assets/project-images/glint-cover.png';
 
 const Projects = () => {
   return (
@@ -21,7 +22,11 @@ const Projects = () => {
         <div className='relative w-full flex items-center gap-4
         md:flex-row md:flex-wrap md:gap-0 md:justify-between
         flex-col'>
-          <ProjectCard title={"Lumidir Habits"} description={"lorem ipsum"} />
+          <ProjectCard 
+            title={"Lumidir Habits"} 
+            description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."} 
+            imageUrl={LumidirCover.src}
+          />
           <ProjectCard 
             title={"Automation Project"} 
             description={"This project is a purely academic automation and educational web application designed to support students in understanding the fundamental concepts of Object-Oriented Programming (OOP). Its primary goal is to reduce learning barriers by combining structured theoretical content with hands-on practical exercises. The application was specifically developed for fifth-year students in the Web Development program at Don Bosco Technical Professional High School and was not intended for commercial use or production environments."} 
