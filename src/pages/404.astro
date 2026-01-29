@@ -1,21 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import OverlayBorder from '../components/OverlayBorder';
-import Navigation from '../components/Navigation.tsx';
-import Footer from '../components/Footer';
-import ContactMe from '../components/ContactMe';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
   <OverlayBorder />
   <div class="main-wrapper">
-    <ContactMe client:load />
-  <Navigation client:load />
+    <h2 class="font-sans text-neutral-400
+    md:text-6xl
+    sm:text-5xl
+    text-4xl">
+      page not found
+    </h2>
+    <h1 class="font-sans font-bold text-[#ad6284]
+    text-[10em]">
+      404
+    </h1>
+    <p class="font-sans-alt text-neutral-400 mx-4 
+    md:text-3xl
+    sm:text-2xl
+    text-center">
+      Sorry, the page you are looking for does not exist.
+    </p>
   </div>
-  <Footer client:load />
 </Layout>
 
 <style>
@@ -29,6 +36,8 @@ import ContactMe from '../components/ContactMe';
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
   }
 </style>
