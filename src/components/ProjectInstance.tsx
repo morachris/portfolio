@@ -71,7 +71,7 @@ const ProjectInstance: React.FC<Props> = ({ title, description, specs, markdownC
 
         <img 
           src={images[0].src} 
-          alt="Glint Image" 
+          alt="Project Image" 
           className='rounded-md m-auto mt-16
             xl:w-7xl' 
         />
@@ -99,7 +99,7 @@ const ProjectInstance: React.FC<Props> = ({ title, description, specs, markdownC
                 return (
                   <img 
                     src={image.src} 
-                    alt={"Glint Screenshot"} 
+                    alt={"Project Screenshot"} 
                     key={index} 
                     className='rounded-md w-2xl object-cover'  
                   />

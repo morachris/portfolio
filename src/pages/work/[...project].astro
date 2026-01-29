@@ -21,8 +21,10 @@ export async function getStaticPaths() {
   const mdFiles = await Astro.glob('../../content/*.md');
   const glintContent: MarkdownInstance<any> = mdFiles.find((glint) => glint.file.includes('glint.md'))!;
   const automationContent: MarkdownInstance<any> = mdFiles.find((auto) => auto.file.includes('automation.md'))!;
+  const lumidirContent: MarkdownInstance<any> = mdFiles.find((lumidir) => lumidir.file.includes('lumidir.md'))!;
   const glintHTML = await glintContent.compiledContent();
   const automationHTML = await automationContent.compiledContent();
+  const lumidirHTML = await lumidirContent.compiledContent();
 
   const projects: any[] = [
     {
@@ -33,7 +35,7 @@ export async function getStaticPaths() {
         date: 'December 2025 - Present',
         type: 'Personal Web Application',
       },
-      markdownContent: '',
+      markdownContent: lumidirHTML,
       images: [
         '../../assets/project-images/lumidir-habits-1.png',
         '../../assets/project-images/lumidir-habits-2.png',

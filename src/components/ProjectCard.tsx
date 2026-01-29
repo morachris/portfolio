@@ -21,11 +21,11 @@ const ProjectCard: React.FC<Props> = ({ title, description, imageUrl }: Props) =
         <img src={imageUrl} alt="Project Cover" className='rounded-t-xl w-full h-full object-cover' />
       </div>
       <div className='p-4 bg-neutral-200 rounded-b-xl border-t border-neutral-300 group-hover:bg-[#010007]'>
-        <h3 className='font-sans text-2xl group-hover:text-[#FF7DB7] font-semibold
+        <h3 className='font-sans text-2xl text-[#010007] group-hover:text-neutral-200 font-semibold
           md:text-xl'>
           {title}
         </h3>
-        <p className='font-sans-alt text-lg text-neutral-700 group-hover:text-neutral-200 tracking-tighter text-ellipsis line-clamp-3'>
+        <p className='font-sans-alt text-lg text-neutral-700 group-hover:text-neutral-400 tracking-tighter text-ellipsis line-clamp-3'>
           {description}
         </p>
       </div>
