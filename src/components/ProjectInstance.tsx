@@ -62,7 +62,7 @@ const ProjectInstance: React.FC<Props> = ({ title, description, specs, markdownC
         <img 
           src={images[0].src} 
           alt="Project Image" 
-          className='rounded-md m-auto mt-16
+          className='m-auto mt-0
             xl:w-7xl' 
         />
 

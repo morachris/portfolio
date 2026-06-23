@@ -15,6 +15,8 @@ import Glint2 from '../../assets/project-images/glint/glint-2.jpeg';
 import Glint3 from '../../assets/project-images/glint/glint-3.jpeg';
 import Glint4 from '../../assets/project-images/glint/glint-4.jpeg';
 
+import Lumidir1 from '../../assets/project-images/lumidir/lumidir-1.jpeg';
+
 import type { MarkdownInstance } from 'astro';
 
 export async function getStaticPaths() {
@@ -30,26 +32,28 @@ export async function getStaticPaths() {
     {
       slug: 'lumidir-habits',
       title: 'Lumidir Habits',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      description: `
+        Lumidir Habits is a personal web application designed to track habits and improve productivity by gamifying daily activities using a streaks system and a dashboard to visualize progress.
+      `,
       specs: {
         date: 'December 2025 - Present',
         type: 'Personal Web Application',
       },
       markdownContent: lumidirHTML,
       images: [
-        '../../assets/project-images/lumidir-habits-1.png',
-        '../../assets/project-images/lumidir-habits-2.png',
-        '../../assets/project-images/lumidir-habits-3.png',
+        Lumidir1,
       ],
     },
     { 
       slug: 'automation-project',
       title: 'Automation Project',
-      description: `This project is a purely academic automation and educational web application designed to support students in understanding the fundamental concepts of Object-Oriented Programming (OOP).
+      description: `
+        This project is a purely academic automation and educational web application designed to support students in understanding the fundamental concepts of Object-Oriented Programming (OOP).
       
-      Its primary goal is to reduce learning barriers by combining structured theoretical content with hands-on practical exercises. 
+        Its primary goal is to reduce learning barriers by combining structured theoretical content with hands-on practical exercises. 
       
-      The application was specifically developed for fifth-year students in the Web Development program at Don Bosco Technical Professional High School and was not intended for commercial use or production environments.`,
+        The application was specifically developed for fifth-year students in the Web Development program at Don Bosco Technical Professional High School and was not intended for commercial use or production environments.
+      `,
       specs: {
         date: 'April 2025 - August 2025',
         type: 'Academic Web Application',
